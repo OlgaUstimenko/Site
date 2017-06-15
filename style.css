@@ -1,0 +1,590 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px; 
+}
+.body {
+    width: 100%;
+}
+header {
+    width: 100%;
+    padding: 5px 80px 5px 80px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color: black;
+}
+li {
+    list-style: none;
+  
+}
+header> ul> li {
+    font-size: 12px;
+}
+header> ul, nav>ul {
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+    align-items: center;
+}
+a {
+      text-decoration: none;
+      color: white;
+}
+
+.network {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.image {
+    width: 50%;
+}
+.image .microsoft {
+    width: 70%;
+    height: 70%;
+    border-right: 1px solid gray;
+    
+}
+nav {
+    color: white;
+    background-color: #39393a;
+    padding: 0px 80px 0px 80px;
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+form img {
+    width: 40px;
+    
+}
+nav> ul{
+    display: flex;
+     justify-content: space-between;
+     width: 60%;
+     position: relative;
+
+}
+/*--поле поиска надо доделать --*/
+.input{
+    width: 200px;
+    border-radius: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
+
+
+}
+
+form .search:hover > .input {
+    visibility: visible;
+    opacity: 1;
+}
+.loading li {
+    margin-bottom: 15px;
+}
+/*---*/
+
+/*-- выпадающие списки--*/
+
+ .loading {
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+    transition: 1s;
+    background-color: white;
+    color: #39393a;
+    border: 1px solid #39393a;
+    flex-direction: column;
+    position: absolute;
+    padding: 30px 50px 30px 20px;
+    top: 100%;
+    border-top: none;
+}
+.loading a {
+color:  #39393a;
+}
+ul li:hover > .loading{
+   visibility: visible;
+    opacity: 1;   
+}
+.loading2 {
+    left: 100%;
+    width: 120%;
+    top: 0;
+    padding: 30px 30px 30px 20px;
+}
+/*block1 */
+.block1 {
+    width: 100%;
+    padding: 50px 80px 50px 80px;
+    background-color: white;  
+    display: flex; 
+    justify-content: space-between;
+}
+.block1 a {
+    color:black;
+    font-size: 20px;
+}
+.block1 .text {
+    width: 70%;
+    line-height: 50px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.block1 h1 a {
+    font-size: 40px;
+}
+/*block2*/
+.block2 {
+    background-color: #e0e1e2;
+    width: 100%;
+    padding: 20px 140px 20px 140px;
+    display: flex;
+    justify-content: space-between;
+}
+.block2 h3 a, .block3 h3 a{
+    color: #39393a;
+}
+.block2 .icon {
+    text-align: center;
+}
+h3 a:hover {
+    color: #2e8ef4;
+}
+.text a:hover {
+    color: #2e8ef4;
+}
+/*block3*/
+.block3 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding:  20px 80px 20px 80px;
+    background-color: white;
+}
+ .title {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 100%;
+    text-align: center;
+}
+.toolz  img{
+    width: 90%;
+}
+ .name {
+        width: 90%;
+        color: white;
+        background-color: #808182;
+        text-align: center;
+    }
+    .toolz {
+        width: 30%;
+    }
+    /*blue*/
+    .blue {
+        background-color: #1d89f4;
+        width: 100%;
+        padding:  5px 80px 5px 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 80px;
+        
+    }
+    .blue p {
+        color: white;
+        margin-top: 10px;
+        margin-right: 10px;
+        font-size: 20px;
+    }
+    .soc {
+        display: flex;
+    
+    }
+    .soc img {
+        width: 40px;
+        height: 40px;
+     }
+     .soc input {
+         border-radius: 0px;
+         border: 1px solid white;
+         color: white;
+         height: 35px;
+         width: 50px;
+         background-color:  #1d89f4;
+     }
+     .button {
+         margin-right: 5px;
+     }
+     /*block4*/
+     .block4, .footer {
+         width: 100%;
+         padding:  30px 80px 30px 80px;
+         display: flex;
+         background-color: #e0e1e2;
+         justify-content: space-between;
+     }
+     .block4 li {
+         margin-bottom: 20px;
+         margin-top: 10px;
+     }
+   
+     .block4 a {
+         color: #313233;
+         font-size: 13px;
+     }
+     .lessons {
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+     }
+     .lessons a, .Community a, .contact a, .footer a {
+         color: #5a7aad;
+     }
+     .lessons li, .Community li, .contact li {
+        margin-top: 5px;
+        margin-bottom: 10px;
+     }
+     .training {
+         margin-bottom: 10px;
+     }
+     /*footer*/
+     .footer a {
+         font-size: 13px;
+     }
+     .footer ul {
+         display: flex;
+         justify-content: space-between;
+         width: 50%;
+     }
+     .footer {
+         justify-content: space-between;
+     }
+     strong {
+         font-size: 17px;
+     }
+    
+/*media*/
+
+@media ( min-width:992px ) and ( max-width:1199px ){
+    header> ul {
+        width: 35%;
+    }
+    .network {
+        width: 31%;
+    }
+    .blue p {
+        margin-left: 15px;
+    }
+    .soc {
+    align-items: center;
+}
+}
+@media ( min-width:768px ) and ( max-width:991px ){
+    header> ul {
+        width: 45%;
+    }
+    .network {
+        width: 43%;
+        justify-content: center;
+    }
+    nav {
+         padding: 5px 5px 5px 5px;
+    }
+        .block1 {
+    padding: 20px 5px 20px 5px;
+    }
+    .image img {
+        width: 100%;
+    }
+    .block1 .text {
+        width: 50%;
+        line-height: 30px;
+    }
+    .block1 h1 a {
+        font-size: 28px;
+    }
+    .block1 a {
+        font-size: 18px;
+    }
+    .block2{
+     padding: 20px 5px 20px 5px;
+    }
+    .block3{
+        padding: 20px 5px 20px 5px;
+    }
+    .blue {
+        flex-wrap: wrap;
+         padding: 20px 5px 20px 5px;
+         justify-content: space-between;
+    }
+   
+    .soc3 {
+        border-top: 1px solid white;
+        padding-top: 10px;
+        width: 100%;
+    }
+     .footer ul {
+         width: 70%;
+     }
+      .footer{
+        padding: 20px 5px 20px 5px;
+    }
+    .loading3 {
+        width: 100%;
+    }
+}
+@media ( max-width:767px ) and ( min-width: 480px ){
+    header {
+            padding: 5px 5px 5px 5px;
+    }
+    .network {
+        width: 40%;
+       
+    }
+    header ul {
+        width: 55%;
+    }
+    nav {
+         padding: 5px 5px 5px 5px;
+         flex-wrap: wrap;
+         font-size: 15px;
+         position: relative;
+         padding-bottom: 30px;
+    }
+    form img {
+    width: 20px;
+    }
+    nav ul {
+        width: 100%
+    }
+    nav form{
+        position: absolute;
+        right: 0px;
+        top: 55%;
+    }
+   .loading {
+       top: 280%;
+       width: 40%;
+    }
+    .loading2 {
+    width: 60%;
+   top:0px;
+    }
+    .block1 {
+    padding: 20px 5px 20px 5px;
+    }
+    .image img {
+        width: 100%;
+    }
+    .block1 .text {
+        width: 50%;
+        line-height: 30px;
+    }
+    .block1 h1 a {
+        font-size: 22px;
+    }
+    .block1 a {
+        font-size: 15px;
+    }
+     .block2{
+     padding: 20px 5px 20px 5px;
+    }
+    .icon img {
+        width: 70%;
+    }
+     .block2 h3 a{
+        font-size: 15px;
+    }
+    .block3 {
+        padding: 20px 5px 20px 5px;
+    }
+    .blue {
+        flex-wrap: wrap;
+         padding: 10px 5px 10px 5px;
+         justify-content: space-between;
+    }
+   
+    .soc3, .soc2 {
+        border-top: 1px solid white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 100%;
+    }
+    .blue p {
+        font-size: 15px;
+    }
+    .soc img {
+       width: 30px;
+       height: 30px;
+    }
+    .blue input {
+       height: 30px;
+         width: 40px;
+    }
+    .block4 {
+        padding:  30px 5px 30px 5px;
+    }
+    .footer {
+        flex-wrap: wrap;
+    }
+      .footer ul {
+         width: 100%;
+     }
+      .footer{
+        padding: 20px 5px 20px 5px;
+     
+    }
+    .footer pre {
+        width: 100%;
+        margin-top: 10px;
+        margin-left: 50%;
+
+    }
+    .load4 {
+        right: 0px;
+    }
+}
+@media ( max-width: 479px) {
+    header {
+        display: flex;
+        flex-wrap: wrap;
+         padding: 5px 10px 5px 10px;
+    }
+    .network {
+        width: 100%;
+    }
+    header ul {
+        width: 100%;
+    }
+     nav {
+         padding: 5px 5px 5px 5px;
+         flex-wrap: wrap;
+         font-size: 15px;
+         position: relative;
+         padding-bottom: 30px;
+    }
+    form img {
+    width: 20px;
+    }
+    nav ul {
+        width: 100%
+    }
+    nav form{
+        position: absolute;
+        right: 0px;
+        top: 55%;
+    }
+   .loading {
+       top: 270%;
+    }
+    .loading2 {
+    left: 0px;
+    width: 100%;
+    top: 100%;
+    padding: 30px 30px 30px 20px;
+    }
+    .block1 {
+        padding: 20px 5px 20px 5px;
+    }
+    .image img {
+        width: 100%;
+    }
+    .block1 .text {
+        width: 50%;
+        line-height: 30px;
+    }
+    .block1 h1 a {
+        font-size: 20px;
+    }
+    .block1 a {
+        font-size: 11px;
+    }
+    .block2{
+     padding: 20px 5px 20px 5px;
+    }
+    .icon img {
+        width: 50%;
+    }
+    .block2 h3 a{
+        font-size: 10px;
+    }
+    .block3 {
+        flex-direction: column;
+         padding: 20px 10px 20px 10px;
+        align-items: center;
+    }
+   .toolz {
+    width: 80%;
+    padding-bottom: 20px;
+    }
+    .block3 h3 a {
+    font-size: 15px;
+    }
+    .title h2 {
+        font-size: 20px;
+    }
+      .blue {
+        flex-wrap: wrap;
+         padding: 10px 5px 10px 5px;
+         justify-content: space-between;
+         margin-top: 20px;
+    }
+   
+    .soc3, .soc2 {
+        border-top: 1px solid white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 100%;
+    }
+    .blue p {
+        font-size: 15px;
+    }
+    .soc img {
+       width: 30px;
+       height: 30px;
+    }
+    .blue input {
+       height: 30px;
+         width: 40px;
+    }
+    .block4 {
+        padding:  30px 5px 0px 5px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .block4 li {
+    margin-bottom: 10px;
+    margin-top: 5px;
+    }
+    .block4 h5 {
+        margin-right: 10px;
+    }
+   .block4 div{
+       margin-bottom: 20px;
+   }
+    .footer {
+        flex-wrap: wrap;
+    }
+      .footer ul {
+         width: 100%;
+        flex-direction: column;
+     }
+      .footer{
+        padding: 20px 5px 20px 5px;
+     
+    }
+    .footer pre {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .load2 {
+        right: 0px;
+    }
+
+}
