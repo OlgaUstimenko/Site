@@ -452,5 +452,7 @@ span p {
         font-size: 12px;
         border-radius: 30px;
     }
-   
+   .background {
+       position: static;
+   }
 }
