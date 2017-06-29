@@ -49,7 +49,8 @@ h2 {
     height: 50px;
     width: 200px;
     border-radius: none;
-     padding-left: 10px;
+    padding-left: 10px;
+    background-color: white;
 }
 input {
     height: 50px;
