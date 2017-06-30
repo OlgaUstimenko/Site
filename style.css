@@ -10,8 +10,9 @@ body {
 }
 .lun {
     width: 50%;
-    height: 800px;
+    height: 100%;
     color: white;
+    position: relative;
 }
 .background {
      background-image: url(main.jpg);
@@ -42,8 +43,11 @@ h2 {
 .menu {
     display: flex;
     padding-top: 30px;
+    /*
     padding-left: 70px;
     padding-right: 70px;
+    */
+    justify-content: center;
 }
 #spisok  {
     height: 50px;
@@ -73,7 +77,9 @@ option {
 }
 .chuse {
     font-size: 14px;
-    margin-left: 280px;
+   /* margin-left: 280px;*/
+    position:absolute;
+    left: 35%;
 }
 
 .lun a {
@@ -92,10 +98,12 @@ a:hover {
     padding-right: 20px;
     padding-bottom: 20px;
     font-size: 15px;
+    /*position: absolute;*/
+    bottom: 10px;
 }
 .footer-lun .contact{
     display: flex;
-    width: 60%;
+    width: 70%;
     justify-content: space-between;
 }
 .lun .fb {
@@ -213,7 +221,8 @@ span p {
 
 @media (min-width: 992px) and (max-width:1199px){
     .chuse {
-        margin-left: 200px;
+       /* margin-left: 200px;*/
+       font-size: 12px;
     }
     .content h2 {
         font-size: 17px;
@@ -233,11 +242,12 @@ span p {
 }
 @media (min-width: 768px) and ( max-width:991px){
     .menu {
-        padding-left: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
     }
     .chuse {
         font-size: 12px;
-        margin-left: 150px;
+       /* margin-left: 150px;*/
     }
     .footer-lun {
         margin-top: 273px;
@@ -297,10 +307,13 @@ span p {
    }
    .content {
        width: 100%;
+       display: flex;
+       flex-direction: column;
+    
    }
    .button {
        margin-left: 0px;
-       width: 200px;
+       width: 150px;
    }
    .logo {
     margin-top: 130px;
@@ -308,6 +321,7 @@ span p {
    .footer-lun {
         margin-top: 330px;
         font-size: 12px;
+        position: absolute;
     }
     .footer-lun .contact {
     width: 50%;
@@ -374,7 +388,7 @@ span p {
         border-radius: 30px;
     }
     .chuse {
-    margin-left: 195px;
+   /* margin-left: 195px;*/
     }
     .background {
        position: static;
@@ -382,6 +396,26 @@ span p {
    .lun .fb {
     margin-right: 100px;
    }
+   .menu {
+       padding-left: 10px;
+       padding-right: 10px;
+       display: flex;
+       justify-content: center;
+   }
+   .footer-lun {
+        position: absolute;
+        flex-direction: column;
+       
+    }
+    #spisok, .search {
+        width: 160px;
+    }
+    .footer-lun .contact {
+        flex-direction: column;
+    }
+    .contact p {
+        margin-bottom: 5px;
+    }
 }
 @media ( max-width: 479px) {
     .lun {
@@ -401,13 +435,15 @@ span p {
         line-height: 40px;
     }
     .menu {
-        padding-left: 5px;
+        padding-left: 10px;
+       padding-right: 10px;
     }
     #spisok, .search {
         width: 100px;
     }
     .chuse {
-        margin-left: 15px;
+       /* margin-left: 15px;*/
+       font-size: 10px;
     }
     .footer-lun {
         margin-top: 245px;
