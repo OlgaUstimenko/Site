@@ -496,4 +496,7 @@ span p {
    .background {
        position: static;
    }
+   .menu{
+       margin-bottom: 170px;
+   }
 }
