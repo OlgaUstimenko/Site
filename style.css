@@ -282,23 +282,21 @@ span p {
     }
 }
 @media (max-width: 767px) and ( min-width: 480px ){
-   .menu {
-       flex-direction: column;
-       
-       align-items: center;
-   }
+    body {
+        flex-direction: column;
+    }
+   
    input {
        width: 200px;
    }
    .lun {
-       width: 55%;
+       width: 100%;
    }
    .background {
-       width: 55%;
+       width: 100%;
    }
    .content {
-       width: 45%;
-       padding: 10px;
+       width: 100%;
    }
    .button {
        margin-left: 0px;
@@ -308,11 +306,11 @@ span p {
     margin-top: 130px;
    }
    .footer-lun {
-        margin-top: 200px;
+        margin-top: 330px;
         font-size: 12px;
     }
     .footer-lun .contact {
-    width: 90%;
+    width: 50%;
     }
     .lun h2 {
         font-size: 18px;
@@ -322,7 +320,7 @@ span p {
         margin-bottom: 10px;
     }
     .nedvij {
-        width: 100%;
+        width: 49%;
         padding: 10px;
     }
     .content h2 {
@@ -336,7 +334,7 @@ span p {
         word-wrap: break-word;
     }
     .jk {
-        width: 48%;
+        width: 32%;
     }
     span p {
         font-size: 16px;
@@ -376,8 +374,14 @@ span p {
         border-radius: 30px;
     }
     .chuse {
-            margin-left: 60px;
+    margin-left: 195px;
     }
+    .background {
+       position: static;
+   }
+   .lun .fb {
+    margin-right: 100px;
+   }
 }
 @media ( max-width: 479px) {
     .lun {
@@ -400,7 +404,7 @@ span p {
         padding-left: 5px;
     }
     #spisok, .search {
-        width: 120px;
+        width: 100px;
     }
     .chuse {
         margin-left: 15px;
