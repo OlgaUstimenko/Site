@@ -9,7 +9,10 @@ body {
 }
 .fon {
  height: auto;
- background-image: url(img/back.jpg);  
+ background-image: url(img/back.jpg); 
+background-repeat: no-repeat;
+background-size: auto;
+background-position: center; 
 }
 /*header*/
 .header{
@@ -17,10 +20,10 @@ body {
     justify-content: space-between;
     background-color: black;
     color: #dbdcdd;
-    padding: 10px 60px 10px 60px;
+    padding: 10px 20px 10px 20px;
     font-size: 15px;
     width: 100%;
-     position: relative;
+    position: relative;
 }
 .header .first-menu {
     list-style: none;
@@ -62,6 +65,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    top: 100%;
 
 }
 
@@ -76,8 +80,8 @@ width: 40%;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 15px 160px 15px 160px;
-    background: rgba(34,34,36,0.6);
+    padding: 15px 180px 15px 180px;
+    background: rgba(34,34,36, 0.5);
     
 }
 .World_of li {
@@ -152,16 +156,71 @@ width: 40%;
     list-style: none;
     display: flex;
     color: #dbdcdd;
-    justify-content: space-between;
-    font-size: 14px;
+    justify-content: center;
+    font-size: 13px;
     font-weight: 700;
     align-items: center;
     font-family:"Arial Narrow",Arial,sans-serif;
+  
 }
 .main_menu  img {
     width: 40px;
+    margin-right: 20px;
 }
 .main_menu a {
     color: #dbdcdd;
     text-decoration: none;
+    margin-right: 10px;
+}
+/*выпадайки в главном меню*/
+.drop_dovn {
+    
+    border-left: 1px solid #dbdcdd;
+    margin-right: 50px;
+}
+
+.material {
+    visibility: hidden;
+    opacity: 0;
+    transition-delay: 0.5s;
+    position: absolute;
+    width: 10%; 
+    font-family: "warhelioscondcregular", Arial, "Helvetica CY", Helvetica, sans-serif;
+    background-color: rgba(82, 81, 84, 0.7);
+    list-style: none;
+    padding: 10px;
+
+}
+
+ul  li:hover> .material {
+    visibility: visible;
+    opacity: 1;
+}
+.material a:hover {
+     color: #ead920;
+}
+.material-icons:hover {
+    background-color: #ead920;
+    color:black;
+}
+.services {
+    background-image: url(img/money.jpg)
+}
+/*soft*/
+.soft {
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+    font-family:"Arial Narrow",Arial,sans-serif;
+    margin-top: 100px;
+    padding-left: 180px;
+}
+.soft h1 {
+    font-size: 25px;
+    
+}
+.soft  span {
+    font-size: 13px;
+    text-decoration: 
+    
 }
