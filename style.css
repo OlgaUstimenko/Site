@@ -5,498 +5,161 @@
 }
 body {
     width: 100%;
+    height: auto;
+    background-image: url(img/back.jpg);  
+}
+
+/*header*/
+.header{
     display: flex;
-    font-family: Open Sans,Trebuchet MS,Arimo,Tahoma,Arial,sans;
-}
-.lun {
-    width: 50%;
-    height: 100%;
-    color: white;
-    position: relative;
-}
-.background {
-     background-image: url(main.jpg);
-     background-repeat: no-repeat;
-     background-size: cover;
-     width: 50%;
-     height: 100%;
-     position: fixed;
-     background-position: center;
-}
-.header {
-    display: flex;
-   
     justify-content: space-between;
-    padding: 20px;
-    font-size: 14px;
+    background-color: black;
+    color: #dbdcdd;
+    padding: 10px 60px 10px 60px;
+    font-size: 15px;
+    width: 100%;
+     position: relative;
 }
-.logo {
-    margin-top: 200px;
+.header .first-menu {
+    list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+  
 }
-h2 {
-    text-align: center;
-    font-size: 25px;
-    line-height: 50px;
+.World_of > li {
+     list-style: none;
 }
-.menu {
-    display: flex;
-    padding-top: 30px;
-    /*
-    padding-left: 70px;
-    padding-right: 70px;
-    */
-    justify-content: center;
+.header li {
+    margin-right: 20px;
 }
-#spisok  {
-    height: 50px;
-    width: 200px;
-    border-radius: none;
-    padding-left: 10px;
-    background-color: white;
+.header >.first-menu a {
+     color: #965f16;
+     font-size: 15px;
+     text-decoration: none;
 }
-input {
-    height: 50px;
-    width: 250px;
-    border-radius: none;
-    padding-left: 10px;
+
+.first-menu a:hover {
+    color: #c18f03;
 }
-option {
-    height: 50px;
-    padding: 15px;
+.header .registration a {
+    color: #dbdcdd;
 }
-.button {
-    margin-left: 10px;
-    height: 50px;
-    width: 120px;
-    padding: 10px;
-    background-color: #f7a102;
+.header .registration a:hover {
     color: white;
+}
+/*drop-down list*/
+.games {
+    visibility: hidden;
+    opacity: 0;
+    transition-delay: 0.5s;
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    font-family: "warhelioscondcregular", Arial, "Helvetica CY", Helvetica, sans-serif;
+    background-image: url(img/menu.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+ul  li:hover> .games {
+    visibility: visible;
+    opacity: 1;
+}
+.games .logo {
+width: 40%;
+}
+.World_of {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 160px 15px 160px;
+    background: rgba(34,34,36,0.6);
     
 }
-.chuse {
-    font-size: 14px;
-   /* margin-left: 280px;*/
-    position:absolute;
-    left: 35%;
+.World_of li {
+    text-align: center;
 }
-
-.lun a {
+/*Hover for .World_of*/
+.Tanks:hover {
+    color:#e8600b;
+}
+.Warships:hover {
+    color: #0bd9e0;
+}
+.Xbox:hover {
+    color: #ead920;
+}
+.Blitz:hover {
+    color: #f49b35;
+}
+.Warplanes:hover {
+    color: #527cf9;
+}
+.Arena:hover {
+    color: #e5b175;
+}
+.Orion:hover {
+    color: #7533f7;
+}
+/*description of drop-down list*/
+.description {
+    display: flex;
+    justify-content: center;
+    padding: 35px 160px 25px 280px;
     color: white;
-    text-decoration: none;
+    line-height: 25px;
+    font-size: 13px;
 }
-a:hover {
-    text-decoration: underline
+.description img {
+    margin-top: 50px;
 }
-.footer-lun {
+.puncts_description {
+    width: 30%;
+    padding-right: 50px;
+}
+.description h3 {
+    color: #e8600b;
+    margin-bottom: 20px;
+}
+.text div {
+    display: flex;
+    margin-top: 20px;
+}
+.text div p {
+    margin-right: 20px;
+}
+.puncts_description .link a{
     color: white;
-    margin-top: 300px;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    font-size: 15px;
-    position: absolute;
-    bottom: 10px;
+    font-size: 13px;
 }
-.footer-lun .contact{
-    display: flex;
-    width: 70%;
-    justify-content: space-between;
-}
-.lun .fb {
-    width: 20px;
-    height: 20px;
-}
-
-.content {
-    width: 50%;
-    background-color: #d9d9db;
-    padding: 20px;
-    position: relative;
-}
-.postroiki, .all-property {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.nedvij, .property {
-    width: 49%;
-    margin-bottom: 15px;
-    background-color: white;
-    padding: 20px;
-}
-.content li {
-    list-style: none;
-    color: #7fa3c6;
-    line-height: 25px;
-}
-.content h2 {
-    font-size: 20px;
-    font-family: Andale Mono, monospace;
-}
-span p {
-    margin-left: 0px;
-    font-size: 18px;
-    margin-bottom: 25px;
-    margin-top: 5px;
-}
-.nowostroi {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.jk {
-    width: 32%;
-     background-color: white;
-     margin-bottom: 15px;
-}
-.jk img {
-    width: 100%;  
-}
-.jk p {
-    font-size: 16px;
-     margin-left: 10px;
-}
-.jk span{
-   margin-left: 5px;
-   line-height: 10px;
-   
-}
-.jk .kiev {
-    color: gray;
-   font-size: 13px;
-}
-.content a {
-    list-style: none;
-    color: #7fa3c6;
-    line-height: 25px;
-    text-decoration: none;
-}
-.content a:hover {
+.puncts_description .link a:hover {
     text-decoration: underline;
 }
-.block {
-    display: flex;
-    margin-top: 40px;
-
-}
-.block li {
-    margin-left: 10px;
-}
-.footer {
+.wot_logo {
+    width: 20%;
+    margin-left: 170px;
     margin-top: 20px;
+}
+/*main menu*/
+.main_menu {
+    width: 100%;
+    padding: 20px 140px 20px 140px;
+    background-color: rgba(82, 81, 84, 0.7);
+    list-style: none;
     display: flex;
-    justify-content: flex-start;
+    color: #dbdcdd;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 700;
+    align-items: center;
+    font-family:"Arial Narrow",Arial,sans-serif;
 }
-.footer img {
-    width: 20px;
-    height: 15px;
-    margin-right: 10px;
+.main_menu  img {
+    width: 40px;
 }
-.ukraine {
-    display: flex;
-    margin-right: 10px;
-}
-.f {
-    color: #b7b9bc;
-}
-.help {
-     background-color: #f7a102;
-     width: 130px;
-     padding: 10px;
-     border-radius: 20px;
-     color: white;
-     font-size: 15px;
-     position: fixed;
-     bottom: 5px;
-     right: 10px;
-}
-
-
-
-/* Медиазапросы */
-
-@media (min-width: 992px) and (max-width:1199px){
-    .chuse {
-       /* margin-left: 200px;*/
-       font-size: 12px;
-    }
-    .content h2 {
-        font-size: 17px;
-    }
-    .jk p {
-        font-size: 13px;
-    }
-    .jk .kiev {
-        line-height: 15px;
-    }
-    .block a {
-        font-size: 15px;
-    }
-    .footer {
-        font-size: 12px;
-    }
-}
-@media (min-width: 768px) and ( max-width:991px){
-    .menu {
-    padding-left: 10px;
-    padding-right: 10px;
-    }
-    .chuse {
-        font-size: 12px;
-       /* margin-left: 150px;*/
-    }
-    .footer-lun {
-        margin-top: 273px;
-        font-size: 12px;
-    }
-    .footer-lun .contact {
-    width: 90%;
-    }
-    h2 {
-        font-size: 20px;
-    }
-    .content h2 {
-        font-size: 17px;
-        line-height: 20px;
-        margin-bottom: 10px;
-    }
-    .content li {
-        font-size: 13px;
-    }
-    .nedvij, .property {
-    padding: 10px;
-    }
-    .jk p {
-          font-size: 15px;
-    }
-    .jk p {
-    line-height: 15px;
-    }
-     .block  {
-        font-size: 13px;
-        flex-wrap: wrap;
-    }
-     .footer {
-        font-size: 12px;
-        flex-wrap: wrap;
-     }
-    .footer .ukraine{
-        width: 100%;
-    }
-    .f {
-        width: 100%;
-    }
-}
-@media (max-width: 767px) and ( min-width: 480px ){
-    body {
-        flex-direction: column;
-    }
-   
-   input {
-       width: 200px;
-   }
-   .lun {
-       width: 100%;
-   }
-   .background {
-       width: 100%;
-   }
-   .content {
-       width: 100%;
-       display: flex;
-       flex-direction: column;
-    
-   }
-   .button {
-       margin-left: 0px;
-       width: 150px;
-   }
-   .logo {
-    margin-top: 130px;
-   }
-   .footer-lun {
-        margin-top: 330px;
-        font-size: 12px;
-        position: absolute;
-    }
-    .footer-lun .contact {
-    width: 50%;
-    }
-    .lun h2 {
-        font-size: 18px;
-        margin-top: 20px;
-    }
-    #spisok, input {
-        margin-bottom: 10px;
-    }
-    .nedvij {
-        width: 49%;
-        padding: 10px;
-    }
-    .content h2 {
-        font-size: 15px;
-        line-height: 25px;
-        margin-bottom: 5px;
-    }
-    .content li {
-        font-size: 12px;
-        line-height: 20px;
-        word-wrap: break-word;
-    }
-    .jk {
-        width: 32%;
-    }
-    span p {
-        font-size: 16px;
-        margin-top: 5px;
-        margin-bottom: 15px; 
-        line-height: 15px; 
-    }
-    .jk p {
-    font-size: 13px;
-    margin-left: 5px;
-    }
-    .property {
-        padding: 5px;
-    }
-    .block  {
-        font-size: 13px;
-        flex-wrap: wrap;
-        margin-top: 30px;
-    }
-    .footer {
-        margin-bottom: 60px;
-        flex-wrap: wrap;
-    }
-    .ukraine p {
-        font-size: 13px;
-    }
-    .footer .ukraine{
-        width: 100%;
-    }
-    .f {
-        width: 100%;
-        font-size: 13px;
-    }
-    .help {
-        width: 100px;
-        font-size: 12px;
-        border-radius: 30px;
-    }
-    .chuse {
-   /* margin-left: 195px;*/
-    }
-    .background {
-       position: static;
-   }
-   .lun .fb {
-    margin-right: 100px;
-   }
-   .menu {
-       padding-left: 10px;
-       padding-right: 10px;
-       display: flex;
-       justify-content: center;
-   }
-   .footer-lun {
-        position: absolute;
-        flex-direction: column;
-       
-    }
-    #spisok, .search {
-        width: 160px;
-    }
-    .footer-lun .contact {
-        flex-direction: column;
-    }
-    .contact p {
-        margin-bottom: 5px;
-    }
-}
-@media ( max-width: 479px) {
-    .lun {
-        width: 100%;
-    }
-    .background {
-        width: 100%;
-    }
-    .content {
-        width: 100%;
-    }
-    body {
-        flex-direction: column;
-    }
-    .lun h2 {
-        font-size: 20px;
-        line-height: 40px;
-    }
-    .menu {
-        padding-left: 10px;
-       padding-right: 10px;
-    }
-    #spisok, .search {
-        width: 100px;
-    }
-    .chuse {
-       /* margin-left: 15px;*/
-       font-size: 10px;
-    }
-    .footer-lun {
-        margin-top: 245px;
-        font-size: 12px;
-    }
-    .footer-lun .contact {
-        width: 90%;
-    }
-    .nedvij {
-        padding: 10px;
-        word-wrap: break-word;
-    }
-    .nedvij h2 {
-        font-size: 15px;
-        line-height: 25px;
-        margin-bottom: 15px;
-    }
-    .content li {
-        font-size: 12px;
-        line-height: 20px;
-        word-wrap: break-word;
-    }
-    .jk p {
-    font-size: 13px;
-    line-height: 15px;
-    margin-left: 5px;
-    }
-    .block {
-        flex-wrap: wrap;
-    }
-    .ukraine p {
-        font-size: 13px;
-    }
-    .footer {
-        margin-bottom: 60px;
-        flex-wrap: wrap;
-    }
-    .footer .ukraine{
-        width: 100%;
-    }
-    .f {
-        width: 100%;
-        font-size: 13px;
-    }
-    .help {
-        width: 100px;
-        font-size: 12px;
-        border-radius: 30px;
-    }
-   .background {
-       position: static;
-   }
-   .menu{
-       margin-bottom: 170px;
-   }
+.main_menu a {
+    color: #dbdcdd;
+    text-decoration: none;
 }
