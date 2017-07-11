@@ -5,10 +5,12 @@
 }
 body {
     width: 100%;
-    height: auto;
-    background-image: url(img/back.jpg);  
+   
 }
-
+.fon {
+ height: auto;
+ background-image: url(img/back.jpg);  
+}
 /*header*/
 .header{
     display: flex;
