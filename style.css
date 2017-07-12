@@ -5,15 +5,13 @@
 }
 body {
     width: 100%;
-   
+   background-image: url(img/back.jpg) ; 
+    background-position: 50% 0;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.fon {
- height: auto;
- background-image: url(img/back.jpg); 
-background-repeat: no-repeat;
-background-size: auto;
-background-position: center; 
-}
+
 /*header*/
 .header{
     display: flex;
@@ -213,14 +211,140 @@ ul  li:hover> .material {
     color: white;
     font-family:"Arial Narrow",Arial,sans-serif;
     margin-top: 100px;
-    padding-left: 180px;
+    padding-left: 200px;
+    align-items: flex-end;
+    margin-bottom: 30px;
 }
 .soft h1 {
-    font-size: 25px;
+    font-size: 26px;
+    margin-right: 20px;
     
 }
-.soft  span {
+.soft  div {
     font-size: 13px;
-    text-decoration: 
+    border-bottom: 1px dashed white;  
+}
+/*Выпадающий список категории*/
+.categories {
+     background-color: #191818;
+     color: #dbdcdd;
+    visibility: hidden;
+    opacity: 0;
+    transition-delay: 0.5s;
+    position: absolute;
+    width: 10%;
+    left: 0px;
+    font-family: "warhelioscondcregular", Arial, "Helvetica CY", Helvetica, sans-serif;
+    left: 385px;
+    list-style: none;
+}
+.soft div:hover> .categories {
+    visibility: visible;
+    opacity: 1;
+}
+.categories li {
+    padding: 10px;
+    border-bottom: 1px solid #070707;
+}
+/*block1*/
+.block1 {
+    margin: 20px 200px 20px 200px;
+    padding-bottom: 20px;
+     display: flex;
+     justify-content: space-between;
+     font-family: "warhelioscondcregular", Arial, "Helvetica CY", Helvetica, sans-serif;
+}
+.armor {
+    background-image: url(img/armor.png);
+    width: 55%;
+    height: 250px;
+    margin-right: 10px;
+}
+.moove:hover {
+    background-size: 120%;
+    background-position: center;
+
+}
+.Wargaming_net {
+    width: 40%;
+    height: 45%;
+
+}
+.assistant {
+    display: flex;  
+    width: 100%;
+    margin-bottom: 10px;
+   
+}
+.asis {
+   
+    width: 30%;
+    height: 100px;
+}
+.asis img {
+    width: 100%;
+}
+.Wargaming {
+    width: 70%;
+    padding: 10px;
+    background-color: rgba(82, 81, 84, 0.7);
+    color: #dbdcdd;
+   
+}
+ span {
+    color: #636262;
+    font-size: 13px;
+     border-bottom: 1px solid rgb(82, 81, 84);
+}
+.Wargaming_net .icons {
+    margin-top: 47px;
+}
+.brul .icons {
+    margin-top: 24px;
+}
+.wot {
+    height: 45%;
+    display: flex;
+}
+.tank {
+   /* background-color: black;*/
+ 
+}
+/* Популярные*/
+.name h1 {
+    text-align: center;
+    color: white;
+    font-family: "warhelioscondcregular", Arial, "Helvetica CY", Helvetica, sans-serif;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+.popular {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 200px 20px 200px;
+   
+}
+
+.picture img{
+    width: 170px;
+    height: 170px;
+}
+.picture {
+    background-color: black;
+}
+.descript {
+    background-color: rgba(82, 81, 84, 0.7);
+    padding: 10px;
     
+}
+h4 {
+    color: #cecece;
+   line-height: 25px;
+}
+
+.popular  i {
+    margin-top: 10px;
+}
+.picture_1 {
+     margin-top: 25px;
 }
