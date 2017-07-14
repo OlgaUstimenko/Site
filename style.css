@@ -549,6 +549,7 @@ h4 {
  .material {
         width: 25%;
     }
+    
 
  }
 @media (max-width: 767px) and (min-width:480px){
@@ -590,9 +591,10 @@ h4 {
 .klan {
     right: 10px;
 }
+
    .World_of{
 
-    padding: 15px 10px 15px 10px;
+    padding: 15px 5px 15px 5px;
    }
    .header {
        font-size: 11px;
@@ -615,5 +617,55 @@ h4 {
         padding-left: 5px;
         padding-right: 5px;
     }
+      
+    .main_menu {  
+          padding: 20px 10px 20px 10px;
+          flex-wrap: wrap;
+          font-size: 11px;
+    }
+    .material {
+        width: 25%;
+    }
+    h4 {
+    line-height: 13px;
+    font-size: 12px;
+}
+.categories {
+    width: 25%;
+    left: 200px;
+}
+.popular {
+    flex-wrap: wrap;
+}
+.mobile{
+    flex-wrap: wrap;
+}
+.soc {font-size: 10px;
+}
+.footer {
+    flex-wrap: wrap;
+}
+.klan {
+    left: 10px;
+}
+
+   .World_of{
+
+    padding: 15px 5px 15px 5px;
+   }
+   .header {
+       font-size: 11px;
+   }
+   .description {
+           padding: 35px 10px 25px 10px;
+           
+   }
+   .puncts_description {
+    width: 50%;
+    padding-right: 10px;
+}
+.material-icons {
+    font-size: 14px;
+}
 
 }
