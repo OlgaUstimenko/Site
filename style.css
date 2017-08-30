@@ -237,16 +237,167 @@ ul li:hover > .list{
     .name h1 {
         font-size: 25px;
 }
+.main {
+    padding: 20px;
+}
+.menu {
+    width: 70%;
+}
+h1 {
+    margin-bottom: 15px;
+    line-height: 40px;
+    font-size: 20px;
+}
+h3 {
+    font-size: 11px;
+}
+.magna-dait {
+    width: 29%;
+}
 }
 
-
-
-@media (min-width: 768px) and (max-width:991px){
-    
-      }
-@media (max-width: 767px) and ( min-width: 480px ){
+@media (min-width: 768px) and (max-width:991px){
+.main {
+    padding: 10px;
+}
+.name h1 {
+    font-size: 20px;
+}
+h1{
+    font-size: 15px;
+    line-height: 35px;
+}
+h3 {
+    font-size: 10px;
+}
+body {
+    font-size: 0.6em;
+}
+.big-block {
+    padding: 35px;
 
 }
-@media ( max-width: 479px) {
-    
+.magna-dait {
+    width: 30%;
+}
+.min-block {
+    display: block;
+}
+.min-block img{
+    height: 57px;
+    width: 60px;
+    
+}
+.menu {
+    width: 82%;
+}
+}
+
+@media (max-width: 767px) and (min-width: 480px){
+    .main {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .bar {
+        width: 100%;
+    }
+    .info {
+        width: 100%;
+    }
+    h1 {
+        line-height: 30px;
+    font-size: 12px;
+    }
+    .big-block {
+        padding: 30px;
+    }
+    .menu {
+        width: 77%;
+        flex-wrap: wrap;
+        font-size: 8px;
+    }
+    .list {
+        width: 100%;
+    }
+
+}
+@media (max-width: 479px) {
+    .name h1 {
+        font-size: 18px;
+    }
+
+    .main {
+        flex-direction: column;
+        padding: 5px;
+    }
+    .bar {
+        width: 100%;
+      
+    }
+    .info {
+        width: 100%;
+    }
+    h1 {
+        line-height: 30px;
+    font-size: 12px;
+    }
+    .big-block {
+        padding: 20px;
+    }
+    .menu {
+        width: 65%;
+        flex-wrap: wrap;
+        font-size: 8px;
+    }
+    .list {
+        width: 100%;
+    }
+    .menu li{
+        border: none;
+    }
+    h3 {
+        font-size: 10px;
+    }
+    .text-min-block p {
+    font-size: 8px;
+}
+.min-block {
+    display: block;
+}
+.min-block img{
+    height: 57px;
+    width: 60px;
+    
+}
+.magna {
+    flex-direction: column;
+}
+.info {
+    padding: 0px;
+}
+.magna-text {
+    width: 100%;
+}
+.magna-dait {
+    width: 100%;
+}
+body {
+    font-size: 0.6em;
+}
+.big-block p {
+    margin-bottom: 20px;
+}
+.button{
+    font-size: 7px;
+}
+.button3 {
+    padding: 18px;
+}
+.list {
+    padding: 10px;
+}
+.list li {
+    line-height: 30px;
+}
+
 }
