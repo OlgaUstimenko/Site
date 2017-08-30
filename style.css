@@ -1,671 +1,233 @@
 * {
     box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 body {
     width: 100%;
-   
-  
-  
+    background-color: #e8e9ea;
+    font-family: "Raleway", Helvetica, sans-serif;
+    font-size: 0.7em;
+    font-weight: 400;
+    letter-spacing: 0.25em;
+    color: #5a5b5b;
+     line-height: 25px;
+     position: relative;
 }
-.fon {
-    background-image: url(img/back.jpg) ; 
-    background-position: 50% 0;
-    height: auto;
-    width: 100%;
-    background-repeat: no-repeat; 
+.header {
+background-color: white;
+padding: 30px;
+display: flex;
+justify-content: space-between;
+
 }
-.fon2 {
-   background-image: url(img/fon2.png);
-   height: 100%;
-}
-/*header*/
-.header{
+.menu{
+    width: 50%;
     display: flex;
-    justify-content: space-between;
-    background-color: black;
-    color: #dbdcdd;
-    padding: 10px 20px 10px 20px;
-    font-size: 15px;
-    width: 100%;
-    position: relative;
+    flex-direction: row;
+   justify-content: space-between;
 }
-.header .first-menu {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-  
-}
-.World_of > li {
+.menu li {
      list-style: none;
+     border-right: 1px solid #a4a4a5;
+     padding-right: 20px;
+     
 }
-.header li {
-    margin-right: 20px;
-}
-.header >.first-menu a {
-     color: #965f16;
-     font-size: 15px;
-     text-decoration: none;
-}
-
-.first-menu a:hover {
-    color: #c18f03;
-}
-.header .registration a {
-    color: #dbdcdd;
-}
-.header .registration a:hover {
-    color: white;
-}
-/*drop-down list*/
-.games {
-    visibility: hidden;
-    opacity: 0;
-    transition-delay: 0.5s;
-    position: absolute;
-    width: 100%;
-    left: 0px;
-    font-family: "warhelioscondcregular", Arial, "Helvetica CY", Helvetica, sans-serif;
-    background-image: url(img/menu.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    top: 100%;
-}
-
-ul  li:hover> .games {
-    visibility: visible;
-    opacity: 1;
-}
-.games .logo {
-width: 40%;
-}
-.World_of {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 180px 15px 180px;
-    background: rgba(34,34,36, 0.5);
-    
-}
-.World_of li {
-    text-align: center;
-}
-/*Hover for .World_of*/
-.Tanks:hover {
-    color:#e8600b;
-}
-.Warships:hover {
-    color: #0bd9e0;
-}
-.Xbox:hover {
-    color: #ead920;
-}
-.Blitz:hover {
-    color: #f49b35;
-}
-.Warplanes:hover {
-    color: #527cf9;
-}
-.Arena:hover {
-    color: #e5b175;
-}
-.Orion:hover {
-    color: #7533f7;
-}
-/*description of drop-down list*/
-.description {
-    display: flex;
-    justify-content: center;
-    padding: 35px 160px 25px 280px;
-    color: white;
-    line-height: 25px;
-    font-size: 13px;
-}
-.description img {
-    margin-top: 50px;
-}
-.puncts_description {
-    width: 30%;
-    padding-right: 50px;
-}
-.description h3 {
-    color: #e8600b;
-    margin-bottom: 20px;
-}
-.text div {
-    display: flex;
-    margin-top: 20px;
-}
-.text div p {
-    margin-right: 20px;
-}
-.puncts_description .link a{
-    color: white;
-    font-size: 13px;
-}
-.puncts_description .link a:hover {
-    text-decoration: underline;
-}
-
-.wot_logo {
-    width: 25%;
-    margin-left: -30px;
-    margin-top: 41px;
-}
-/*main menu*/
-.main_menu {
-    width: 100%;
-    padding: 20px 140px 20px 140px;
-    background-color: rgba(82, 81, 84, 0.7);
-    list-style: none;
-    display: flex;
-    color: #dbdcdd;
-    justify-content: center;
-    font-size: 13px;
-    font-weight: 700;
-    align-items: center;
-    font-family:"Arial Narrow",Arial,sans-serif;
-  
-}
-.main_menu  img {
-    width: 40px;
-    margin-right: 20px;
-}
-.main_menu a {
-    color: #dbdcdd;
+a {
     text-decoration: none;
-    margin-right: 10px;
+    color: #5a5b5b;
 }
-/*выпадайки в главном меню*/
-.drop_dovn {
-    
-    border-left: 1px solid #dbdcdd;
-    margin-right: 50px;
+.first>a {
+    color: black;
 }
-
-.material {
-    visibility: hidden;
-    opacity: 0;
-    transition-delay: 0.5s;
-    position: absolute;
-    width: 10%; 
-    font-family: "warhelioscondcregular", Arial, "Helvetica CY", Helvetica, sans-serif;
-    background-color: rgba(82, 81, 84, 0.7);
-    list-style: none;
-    padding: 10px;
-
+ a:hover{
+    color: #a0d5d6;
 }
-
-ul  li:hover> .material {
-    visibility: visible;
-    opacity: 1;
-}
-.material a:hover {
-     color: #ead920;
-}
-.material-icons:hover {
-    background-color: #ead920;
-    color:black;
-}
-.services {
-    background-image: url(img/money.jpg)
-}
-/*общий блок с боковыми отступами*/
-.block {
-    padding-left: 200px;
-    padding-right: 200px;
-}
-
-
-
-/*soft*/
-.soft {
-    display: flex;
-    justify-content: flex-start;
-    color: white;
-    font-family:"Arial Narrow",Arial,sans-serif;
-    margin-top: 100px;
-   
-    align-items: flex-end;
-    margin-bottom: 30px;
-}
-.soft h1 {
-    font-size: 26px;
-    margin-right: 20px;
-    
-}
-.soft  div {
-    font-size: 13px;
-    border-bottom: 1px dashed white;  
-}
-/*Выпадающий список категории*/
-.categories {
-     background-color: #191818;
-     color: #dbdcdd;
-    visibility: hidden;
-    opacity: 0;
-    transition-delay: 0.5s;
-    position: absolute;
-    width: 10%;
-    left: 0px;
-    font-family: "warhelioscondcregular", Arial, "Helvetica CY", Helvetica, sans-serif;
-    left: 385px;
-    list-style: none;
-}
-.soft div:hover> .categories {
-    visibility: visible;
-    opacity: 1;
-}
-.categories li {
-    padding: 10px;
-    border-bottom: 1px solid #070707;
-}
-/*block1*/
-.block1 {
-    margin-top: 20px ;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-     display: flex;
-     justify-content: space-between;
-     font-family: "warhelioscondcregular", Arial, "Helvetica CY", Helvetica, sans-serif;
-}
-.armor {
-    background-image: url(img/armor.png);
-    width: 55%;
-    height: 250px;
-    margin-right: 10px;
-}
-.moove:hover {
-    background-size: 120%;
-    background-position: center;
-
-}
-.Wargaming_net {
-    width: 40%;
-    height: 45%;
-
-}
-.assistant {
-    display: flex;  
+/*хедер закончился*/
+.main {
     width: 100%;
-    margin-bottom: 10px;
-   
-}
-.asis {
-   
-    width: 30%;
-    height: 100px;
-}
-.asis img {
-    width: 100%;
-}
-.Wargaming {
-    width: 70%;
-    padding: 10px;
-    background-color: rgba(82, 81, 84, 0.7);
-    color: #dbdcdd;
-   
-}
- span {
-    color: #636262;
-    font-size: 13px;
-     border-bottom: 1px solid rgb(82, 81, 84);
-}
-.Wargaming_net .icons {
-    margin-top: 47px;
-}
-.brul .icons {
-    margin-top: 24px;
-}
-.wot {
-    height: 45%;
-    display: flex;
-}
-.tank {
-   /* background-color: black;*/
- 
-}
-/* Популярные*/
-.name h1 {
-    text-align: center;
-    color: white;
-    font-family: "warhelioscondcregular", Arial, "Helvetica CY", Helvetica, sans-serif;
-    font-size: 25px;
-    margin-bottom: 30px;
-}
-.popular {
-    width: 100%;
+    padding: 50px;
     display: flex;
     justify-content: space-between;
+}
+.bar {
+    width: 30%;
+    padding: 20px;
+}
+.name h1 {
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    letter-spacing: 0.35em;
+    line-height: 50px;
+    color: black;
+}
+.name p {
+     line-height: 25px;
+     letter-spacing: 0.35em;
+}
+.name a {
+    border-bottom: 1px dashed #a4a4a5;
+}
+.name {
+    border-bottom: 1px solid #d9dbdb;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+.name img {
+    border-radius: 50%;
+}
+/*block*/
+.block{
+    background-color: white;
+    border: 1px solid #d9dbdb;
+    margin-bottom: 40px;
+}
+.block>img {
+    width: 100%;
+}
+.opisanie {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.opisanie img {
+    height: 100%;
+    border-radius: 50%;
+}
+/*block конец*/
+.min-block {
+    display: flex;
     padding-top: 20px;
     padding-bottom: 20px;
-   border-bottom: 1px solid rgb(82, 81, 84);
+     border-bottom: 1px solid #d9dbdb;
 }
-
-.picture img{
-    width: 170px;
-    height: 170px;
-}
-.picture {
-    background-color: black;
-}
-.descript {
-    background-color: rgba(82, 81, 84, 0.7);
-    padding: 10px;
-    
-}
-h4 {
-    color: #cecece;
-   line-height: 25px;
-}
-
-.popular  i {
-    margin-top: 10px;
-}
-.picture_1 {
-     margin-top: 25px;
-}
-.name_of { 
-    display: flex;
-
-}
-/*Мобильные приложения*/
-.name_of h1 {
-    font-size: 20px;
-    color: white;
-    margin-top: 40px;
-    margin-bottom: 30px;
-}
-.name_of a {
-    text-decoration: none;
-    color: #f4aa42;
-    font-size: 14px;
-     margin-bottom: 20px;
-    align-items: center;
-    margin-top: 35px;
-    margin-left: 10px;
-
-}
-
-.mobile {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-bottom: 20px;
-    
-}
-.mobile-punkt:hover {
-    border: 1px solid rgb(82, 81, 84); 
-    
-}
-.mobile-punkt img {
-    width: 180px;
-    height: 180px;
-    padding: 10px;
-}
-.mobile-deskript {
-    padding: 10px;
-}
-.icon1 {
-    margin-top:  20px;
-}
-
-.video {
-   
-    width: 45%;
-}
-/*footer*/
-.footer {
-    background: black;
-    width: 100%;
-    padding:20px 200px 20px 200px;
-  
-}
-.soc {
-    display: flex;
-    justify-content: space-between;
-     color: #cecece;
-     border-bottom: 1px solid rgb(82, 81, 84);  
-     padding: 10px; 
-     font-size: 14px;
-}
-.soc div {
-    display: flex;
-}
-.soc i {
+.min-block img {
+    height: 70px;
+    width: 90px;
     margin-right: 10px;
 }
-.footer a {
-    text-decoration: none;
-     color: #cecece;
+.text-min-block p {
+    font-size: 9px;
 }
-.info i {
-    color: red;
-    font-size: 35px;
+.first1 {
+    border-top: 1px solid #d9dbdb;
+} 
+.about p{
+    margin-bottom: 50px;
 }
-.soc span {
-    border-bottom: none;
-     color: #cecece;
+.about {
+    margin-top: 50px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #d9dbdb;
 }
-.rights {
-    font-size: 12px;
-      color: rgb(82, 81, 84);
-      text-align: center;
-      margin-top: 20px;
-      margin-bottom: 5px;
-}
-.info span i {
-    font-size: 15px;
-}
-
-
-
-/*адаптивность*/
-@media(min-width: 992px) and (max-width:1199px){
-    .block {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    .footer {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    .description {
-            padding: 35px 10px 25px 10px;
-    }
-      .World_of {
-    padding: 15px 10px 15px 10px;
-}
-    .puncts_description {
-    padding: 35px 20px 25px 20px;
-}
-    .block1 {
-        margin: 20px;
-    }
-    .popular {
-        padding: 20px;
-    }
-}
-@media (min-width: 768px) and (max-width:991px){
-    .block {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-     .footer {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    .description {
-            padding: 35px 20px 25px 20px;
-    }
-    .World_of {
-    padding: 15px 10px 15px 10px;
-    }
-    .puncts_description   {
-        padding: 16px 5px 25px 5px;
-     }
-    .popular {
-            padding: 20px 10px 20px 10px;
-     }
-    .picture img {
-    width: 120px;
-    height: 100px;
-    }
-    .h4 {
-    font-size: 13px;
-    }
-    .block1 {
-        margin: 20px;
-    }
-    .Wargaming {
-        width: 50%;
-    }
-    h4 {
-    color: #cecece;
-    line-height: 20px;
-    font-size: 13px;
-    }
-    .Wargaming_net .icons {
-        margin-top: 19px;
-    }
-    .material-icons {
-        font-size: 19px;
-    }
-    .descript {
-        padding: 5px;
-    }
-    .wot_logo {
-        margin-left: 42px;
-    }
-    .sociym {
-        right: 15px;
-    }
-    .categories {
-    width: 25%;
-    left: 200px;
-}
- .material {
-        width: 25%;
-    }
+.button2 {
     
-
- }
-@media (max-width: 767px) and (min-width:480px){
-    .block {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    .footer {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    .main_menu {  
-          padding: 20px 10px 20px 10px;
-          flex-wrap: wrap;
-          font-size: 11px;
-    }
-    .material {
-        width: 25%;
-    }
-    h4 {
-    line-height: 13px;
-    font-size: 12px;
+      border: 1px solid #d9dbdb;
+      padding: 20px;
+       font-size: 10px;
 }
-.categories {
-    width: 25%;
-    left: 200px;
+/*info*/
+.info {
+    width: 75%;
+    padding: 20px;
+    
 }
-.popular {
-    flex-wrap: wrap;
-}
-.mobile{
-    flex-wrap: wrap;
-}
-.soc {font-size: 10px;
-}
-.footer {
-    flex-wrap: wrap;
-}
-.klan {
-    right: 10px;
-}
-
-   .World_of{
-
-    padding: 15px 5px 15px 5px;
-   }
-   .header {
-       font-size: 11px;
-   }
-   .description {
-           padding: 35px 10px 25px 10px;
-           
-   }
-   .puncts_description {
-    width: 50%;
-    padding-right: 10px;
-}
-}
-@media (max-width: 479px) {
-    .block {
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-    .footer {
-        padding-left: 5px;
-        padding-right: 5px;
-    }
+.big-block {
+    width: 100%;
+    background-color: white;
+    padding: 50px;
+    border: 1px solid #d9dbdb;
+     margin-bottom: 40px;
       
-    .main_menu {  
-          padding: 20px 10px 20px 10px;
-          flex-wrap: wrap;
-          font-size: 11px;
-    }
-    .material {
-        width: 25%;
-    }
-    h4 {
-    line-height: 13px;
-    font-size: 12px;
 }
-.categories {
-    width: 25%;
-    left: 200px;
-}
-.popular {
-    flex-wrap: wrap;
-}
-.mobile{
-    flex-wrap: wrap;
-}
-.soc {font-size: 10px;
-}
-.footer {
-    flex-wrap: wrap;
-}
-.klan {
-    left: 10px;
-}
+.magna {
+    display: flex;
+    justify-content: space-between;
 
-   .World_of{
-
-    padding: 15px 5px 15px 5px;
-   }
-   .header {
-       font-size: 11px;
-   }
-   .description {
-           padding: 35px 10px 25px 10px;
-           
-   }
-   .puncts_description {
-    width: 50%;
-    padding-right: 10px;
 }
-.material-icons {
-    font-size: 14px;
+.magna-dait {
+  width: 25%;
 }
+.magna-text {
+    width: 65%;
+}
+h1 {
+    color: black;
+    margin-bottom: 15px;
+    line-height: 50px;
+}
+.magna-dait {
+   
+}
+.magna-dait img{
+    border-radius: 50%;
+    height: 60%;
+}
+.pic {
+    border-top: 1px solid #d9dbdb;
+    padding-top: 50px;
 
+    margin-bottom: 50px;
+}
+.button {
+   margin-top: 50px;
+    padding: 20px;
+    background-color: white;
+    font-size: 13px;
+    border: 1px solid #d9dbdb;
+}
+.big-block p {
+    margin-bottom: 50px;
+}
+.button3 {
+    background-color: #e8e9ea;
+}
+/*vipadaika*/
+.list {
+   visibility: hidden;
+    position: fixed;
+    opacity: 0;
+    transition: 1s;
+    right: 0px;
+    top: 0px;
+    
+}
+ul li:hover > .list{
+   visibility: visible;
+    opacity: 1;
+}
+.menu2 li {
+    list-style: none;
+}
+.list {
+    padding: 50px;
+    background-color: white;
+    height: 100%;
+}
+.list li {
+    padding: 10px;
+
+    line-height: 40px;
+}
+.list p {
+    font-size: 9px;
+}
+.last {
+       border-bottom: 1px solid #d9dbdb;
+
+}
+.button4 {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 40px;
+    width: 100%;
+}
+.last2 {
+    margin-bottom: 40px;
+}
+.last3 {
+    display: flex;
+    justify-content: center;
 }
