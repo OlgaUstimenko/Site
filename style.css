@@ -4,306 +4,490 @@
     padding: 0;
 }
 body {
+   /* width: 1920px;*/
+   width: 100%;
+    background-color: white;
+    font-style: Bold;
+    color: #646464;
+}
+.wrapper {
     width: 100%;
-    background-image: url(img/header.jpg);
-    background-attachment: fixed;
-    line-height: 30px;
-    font-size: 18px;
-    font-family: inherit;
-    color: #2c2d2d;
+}
+.header {
+    display: flex;
+    padding-left: 320px;
+    padding-right: 320px;
+    justify-content: space-between;
+    font-style: Bold;
+    color: #646464;
+    font-size: 21px;
+    width: 100%;
+    height: 145px;
+    align-items: center;
    
 }
-/*
-.background {
-      background-image: url(img/header.jpg);
-     background-repeat: no-repeat;
-     background-size: cover;
-     width: 100%;
-     height: 100%;
-     background-attachment: fixed;
-     background-position: center;
-}
-*/
-.header {
-   width: 100%;
-   background-color: #4e82b2;
-   color: white;
-   text-align: center;
-   padding: 60px;
-}
-h1 {
-    margin-bottom: 20px;
-    line-height: 45px;
-}
-button {
-    margin-top: 40px;
-    margin-bottom: 60px;
-    background-color:#4e82b2;
-    color: white;
-    padding: 20px;
-    border: 1px solid white;
-    font-size: 15px;
-    border-radius: 5%;
-}
-.material-icons {
-    font-size: 94px;
-}
-.lorem {
+
+.email_phone {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    width: 442px;
+}
+.block1 {
+    border-top: 1px solid #f2f2f2;
+     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     width: 100%;
-    background-color: white;
-    padding: 80px 120px 80px 120px;
-   
+    display: flex;
+    justify-content: space-between;
+   position: relative;
 }
 .text {
-    width: 40%;
-}
- img {
-   border-radius: 2%;
-}
-h2 {
-    font-size: 35px;
-    line-height: 40px;
-    margin-bottom: 40px;
-}
-.dolor {
-    width: 100%;
+    padding-top: 220px;
+    padding-left: 323px;
     display: flex;
-    padding: 80px 120px 80px 120px;
-    justify-content: space-between;
-    color: white;
-    background-color: rgba(102, 114, 108, 0.4);
+    flex-direction: column;
+    position: absolute;
     
 }
-.icon {  
-    width: 45%;
+.block1 img{
+      margin-left: 858px;
    
 }
-.icon-block {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    margin-bottom: 140px;   
+.stroka1 {
+    font-size: 74.4px;
+    color: #717171;
 }
-.icon1 {
-    color: #d8f981;
+.stroka2 {
+    font-size: 59.27px;
+    color: #13bbcb;
 }
-.icon2 {
-    color: #80f47c;
+.stroka3 {
+    font-size: 127.57px;
+    color: #717171;
 }
-.icon3 {
-    color: #5fe8cc;
-}
-.icon4 {
-    color: #60b5f2;
-}
-.icon5 {
-    color: #1a96ef;
-}
-.icon6 {
-    color: #a960f2;
-}
-.adipisking {
-    width: 100%;
-    background-color: white;
-    text-align: center;
-    padding: 80px 120px 80px 120px;
-}
-.info {
+.vid {
     display: flex;
     justify-content: space-between;
-    margin-top: 60px;
+    font-size: 29.83px;
+    color: #13bbcb;
 }
-.block {
-    text-align: center;
-    width: 25%;
+.p1 {
+     border-right: 1px solid #717171;
+     padding-right: 18px;
 }
-.block img{
+button {
+    background-color: #ecb803;
+    height: 100px;
+    width: 330px;
+    color: #282828;
+    font-style: semibold;
+    font-size: 45.14px;
+    margin-top: 135px;
+    border-radius: 20px 0px 20px 0px;
+}
+.block2 {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 335px;
+  
+    
+}
+.avia {
+    width: 365px;
+}
+.punkts {
+      justify-content: space-between;
+      width: 960px;
+      padding-top: 175px;
+      padding-bottom: 140px;
+      font-size: 24px;
+      color: #646464;
+}
+.perevozka {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 120px;
+}
+.doc-box {
+    display: flex;
+    justify-content: space-around;
+}
+.avto {
+    width: 365px;
+}
+.doc {
+    width: 365px;
+}
+.box {
+    width: 365px;
+}
+h3 {
+    font-family: Semibold;
+    font-size: 36px;
+    color: #3caa90;
+    margin-bottom: 40px;
+}
+.block3 {
     width: 100%;
-    margin-bottom: 20px;
+    padding-right: 335px;
+    display: flex;
+    justify-content: space-between;
 }
-.block button {
-    background-color: white;
-    color:  #2c2d2d;
-    border: 1px solid  #2c2d2d;
-    padding: 15px 40px 15px 40px;
+.info {
+    padding-top: 170px;
+    padding-bottom: 125px;
+    font-size: 24px;
+   
 }
-.block  h3{
-    margin-bottom: 20px;
+.zagol {
+    font-size: 24px;
+    color: #3caa90;
+    margin-bottom: 110px;
 }
-.feugiat {
-      padding: 80px 120px 80px 120px;
-      text-align: center;
-      color: white;
-      background-color: rgba(102, 114, 108, 0.4);
+
+.ponimaem {
+    margin-top: 115px;
+    display: flex;
 }
-.feugiat button {
-    padding: 15px 40px 15px 40px;
-     background-color: rgba(102, 114, 108, 0.4);
-    color: white;
+.info img {
+    margin-right: 24px;
+}
+a {
+    color: #646464;
+}
+.block4 {
+    display: flex;
+    width: 100%;
+    padding-right: 335px;
+}
+.foto{
+    margin-top: 180px;
+    margin-bottom: 238px;
+}
+.foto1 {
+    display: flex;
+    
+}
+.foto7 {
+    width: 101%;
+}
+.wrapperblock5 {
+     width: 100%;
+     display: flex;
+}
+.block5 {
+    max-width: 1920px;
+    margin: 0 auto;
+    width: 100%;
+  /*  padding-right: 335px; */
+    position: relative;
+}
+.otziv {
+    margin-left: 320px;
+   height: 345px; 
+}
+.otzivi {
+     display: flex;
+     margin: 0 auto;
+}
+.otziv1 {
+    margin-top: 168px;
+    /*margin-left: 225px;*/
+    margin-right: 78px;
+    margin-bottom: 475px;
+}
+.kate {
+    border-radius: 50%;
+}
+.otziv1-niz {
+    display: flex;
+}
+.otziv1-niz img {
+margin-right: 25px;
+}
+.otziv2 {
+    margin-top: 305px;
+}
+.otziv2-niz {
+    display: flex;
+}
+.otziv2-niz img {
+margin-right: 25px;
+}
+.bird {
+    position: absolute;
+    top: 650px;
+}
+.button-otziv {
+    font-size: 27px;
+    width: 265px;
+    height: 70px;
+    position: absolute;
+    bottom: 120px;
+    right: 425px;
+}
+.block6 {
+    display: flex;
+    padding-right: 310px;
+}
+.dannie {
+    display: flex;
+    flex-direction: column;
+    margin-top: 190px;
+}
+form {
+    
+    font-family: regular;
+    font-size: 16.17px;
+}
+.forma {
+    display: flex;
+}
+.dannie h3 {
+    font-family: regular;
+    font-size: 16.17px;
+}
+li {
+    list-style: none;
+    margin-bottom: 50px;
+}
+.block6 input {
+    border: none;
+  
+
+}
+li {
+    border-bottom: 1px solid #e6e6e6;
+}
+ul {
+    width: 400px;
+}
+.first {
+    margin-right: 170px;
+}
+.dop {
+    width: 960px;
+}
+.block6-2 {
+    margin-left: 75px;
+}
+.submit {
+    font-size: 27px;
+    width: 265px;
+    height: 70px;
+    background-color: #ecb803;
+    color: #282828;
+    font-style: semibold;
+    border-radius: 20px 0px 20px 0px;
+    margin-top: 102px;
+ 
+}
+.block7 {
+    padding-left: 213px;
+    display: flex;
+    width: 100%;
+    padding-right: 335px;
+    justify-content: space-between;
+
+}
+.kontakts {
+    margin-top: 83px;
+    height: 100%;
+}
+.sviaz {
+    padding-top: 186px;
+}
+.sviaz input {
+    height: 55px;
+    width: 317px;
+    margin-bottom: 30px;
+}
+
+.submit2 {
+    font-size: 27px;
+    width: 195px;
+    height: 60px;
+    background-color: #ecb803;
+    color: #282828;
+    font-style: semibold;
+    border-radius: 20px 0px 20px 0px;
+    margin-top: 33px;
+    margin-bottom: 65px;
+}
+.soc {
+    margin-right: 50px;
+}
+.contact{
+    margin-bottom: 35px;
+}
+.phones {
+    padding-top: 230px;
+    padding-bottom: 315px;
+    font-size: 24px;
+}
+.dannie2 h3{
+    font-family: regular;
+    font-size: 16.17px;
+}
+.footer {
+    margin-top: 53px;
+}
+textarea {
+    width: 315px;
+}
+/*adapt*/
+@media (min-width: 992px) and (max-width: 1199px){
+    body {
+        width: 100%;
+        }
+   .header {
+        padding-left: 20px;
+        padding-right: 20px;
+   }
+   .block1 img {
+        width: 50%;
+        height: 50%;
+   }
+   .text {
+        padding-left: 46px;
+        padding-top: 56px;
+   }
+   .block1 img {
+        margin-left: 488px;
+    }
+    .stroka1 {
+        font-size: 40px;
+    }
+    .stroka2 {
+        font-size: 35px;
+    }
+    .stroka3 {
+        font-size: 67px;
+    }
+    .vid {
+            font-size: 16.83px;
+    }
+    button {
+        height: 80px;
+        width: 230px;
+        font-size: 32.14px;
+        margin-top: 85px;
+    }
+  
+    .footer img{
+        width: 100%;
+    }
+    .block2 {
+        padding-right: 35px;
+        width: 100%;
+      
+    }
+    .punkts {
+           font-size: 17px;
+    }
+    .block2 >img {
+        width: 45%;
+        height: 45%;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    .avia, .avto, .doc, .box {
+        width: 40%;
+    }
+    .perevozka {
+        margin-bottom: 60px;
+    }
+    .block3 {
+        padding-right: 35px;
+        width: 100%;
+      
+    }
+     .block3 >img {
+        width: 45%;
+        height: 45%;
+    }
+    .info {
+        padding-top: 70px;
+        padding-bottom: 70px;
+        font-size: 17px;
+    }
+    .ponimaem {
+        margin-top: 50px;
+    }
+    .block4 {
+        padding-right: 35px;
+        justify-content: space-between;
+       width: 100%;
+      
+    }
+    .block4 >img {
+        width: 50%;
+        height: 50%;
+       
+    }
+    .foto {
+        margin-top: 80px;
+        margin-bottom: 138px;
+
+   }
+   .foto1 {
+        flex-direction: column;
+   }
+   .foto1_1 {
+        display: none;
+   }
+   .otziv {
+    margin-left: 155px;
+   }
+   .otziv2 {
+       display: none;
+   }
+   .button-otziv {
+       right: 45px;
+   }
+   .block6 >img {
+        width: 50%;
+        height: 50%; 
+    }
+    .forma {
+        flex-direction: column;
+    }
+    .dop {
+    width: 400px;
+}
+.form1 {
+    margin-bottom: 50px;
+}
+.block7 {
+    padding-left: 0px;
+    padding-right: 10px;
+    width: 100%;
 }
 .footer {
     width: 100%;
-    background-color: #4e82b2;
-    
-    
 }
-.icon7 {
-    color: white;
-    font-size: 30px;
-    margin-right: 15px;
-    margin-left: 15px;
-    
+.phones {
+    margin-left: 30px;
 }
-.socseti {
-    display: flex;
-    justify-content: center;
-     padding: 80px 120px 80px 120px;
-}
-/*adapt*/
-
-@media (min-width: 992px) and (max-width: 1199px){
-    .lorem img{
-        width: 50%;
-    }
-}
-@media (min-width: 768px)and (max-width: 991px){
-     .lorem img{
-        width: 50%;
-        height: 100%;
-    }
-    .lorem {
-        padding: 80px 30px 80px 30px;
-    }
-    h2 {
-        font-size: 20px;
-        margin-bottom: 20px;
-    }
-    .text {
-    width: 60%;
-    }
-    .dolor{
-        padding: 80px 30px 80px 30px;
-    }
-    .icon-block {
-            justify-content: space-between;
-    }
-    .icon {
-    width: 35%;
-    }
-    .adipisking{
-        padding: 80px 30px 80px 30px;
-    }
-}
-
-@media (max-width: 767px) and (min-width: 480px){
-    .header {
-        padding: 50px 11px 50px 11px;
-    }
-    .lorem img{
-        width: 100%;
-        height: 100%;
-        order: 1;
-        margin-bottom: 20px;
-    }
-    .text{
-        order: 2;
-        width: 100%;
-    }
-    .lorem {
-        flex-direction: column;
-        padding: 50px 30px 50px 30px;
-    }
-   h2 {
-      font-size: 25px;
-   }
-   .dolor {
-        flex-direction: column;
-        padding: 50px 30px 50px 30px;
-   }
-   .icon {
+.block5 {
     width: 100%;
-    }
-    .icon-block {
-        margin-bottom: 50px;
-    }
-    .adipisking {
-        padding: 50px 30px 50px 30px;
-    }
-    .h3{
-        font-size: 10px;
-    }
-    .block {
-        width: 30%;
-    }
-    .feugiat {
-         padding: 50px 30px 50px 30px;
-    }
+}
+.block6 {
+    width: 100%;
+}
+}
+@media (min-width: 768px)and (max-width:991px){
+
+}
+@media (max-width: 767px) and (min-width: 480px){
+
 }
 @media (max-width: 479px){
-        .header {
-        padding: 50px 11px 50px 11px;
-    }
-    .lorem img{
-        width: 100%;
-        height: 100%;
-        order: 1;
-        margin-bottom: 20px;
-    }
-    .text{
-        order: 2;
-        width: 100%;
-    }
-    .lorem {
-        flex-direction: column;
-        padding: 50px 20px 50px 20px;
-    }
-   h2 {
-      font-size: 18px;
-      line-height: 35px;
-      margin-bottom: 30px;
-   }
-   .dolor {
-        flex-direction: column;
-        padding: 50px 20px 50px 20px;
-   }
-   .icon {
-    width: 100%;
-    }
-    .icon-block {
-        margin-bottom: 50px;
-    }
-    .adipisking {
-        padding: 50px 20px 50px 20px;
-    }
-    .h3{
-        font-size: 10px;
-    }
-    .block {
-        width: 100%;
-    }
-    .feugiat {
-         padding: 50px 20px 50px 20px;
-    }
-    h1 {
-        font-size: 20px;
-    }
-    body {
-        font-size: 15px;
-    }
-    button {
-        margin-bottom: 35px;
-        font-size: 13px;
-    }
-    .material-icons {
-    font-size: 23px;
-    }
-    .info {
-        flex-direction: column;
-    }
-    .socseti {
-         padding: 50px 20px 50px 20px;
-    }
+
 }
+
+
+
+
 
