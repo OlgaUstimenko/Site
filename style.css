@@ -36,10 +36,17 @@ body {
 .block1 {
     border-top: 1px solid #f2f2f2;
      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+     max-width: 1920px;
     width: 100%;
     display: flex;
     justify-content: space-between;
    position: relative;
+}
+.wrapperblock1 {
+    width: 100%;
+    max-width: 1920px;
+    display: flex;
+    justify-content: space-between;
 }
 .text {
     padding-top: 220px;
@@ -50,7 +57,7 @@ body {
     
 }
 .block1 img{
-      margin-left: 858px;
+     margin-left: 858px;
    
 }
 .stroka1 {
@@ -172,8 +179,17 @@ a {
     width: 101%;
 }
 .wrapperblock5 {
-     width: 100%;
-     display: flex;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    background-image: url(img/bird.png);
+    
+    background-color: white;
+    background-position-x: 0%;
+    background-position-y: 100%;
+    background-size: auto;
+    
+     
 }
 .block5 {
     max-width: 1920px;
@@ -181,6 +197,13 @@ a {
     width: 100%;
   /*  padding-right: 335px; */
     position: relative;
+   
+}
+.block5 span{
+    font-size: 60px;
+    color: #03967d;
+    transform: translate(70%,30%) rotate(-90deg);
+     transform-origin: 0 0;
 }
 .otziv {
     margin-left: 320px;
@@ -335,6 +358,7 @@ ul {
 textarea {
     width: 315px;
 }
+
 /*adapt*/
 @media (min-width: 992px) and (max-width: 1199px){
     body {
