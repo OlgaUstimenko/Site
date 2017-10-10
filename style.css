@@ -199,16 +199,21 @@ a {
     position: relative;
    
 }
-.block5 span{
+.block5 .four{
     font-size: 60px;
     color: #03967d;
-    transform: translate(70%,30%) rotate(-90deg);
+    transform: translate(70%,40%) rotate(-90deg);
+     transform-origin: 0 0;
+}
+.four img {
+     transform: translate(117%,28%) rotate(90deg);
      transform-origin: 0 0;
 }
 .otziv {
     margin-left: 320px;
    height: 345px; 
 }
+
 .otzivi {
      display: flex;
      margin: 0 auto;
