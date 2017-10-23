@@ -4,8 +4,7 @@
     padding: 0;
 }
 body {
-   /* width: 1920px;*/
-   width: 100%;
+    width: 100%;
     background-color: white;
     font-style: Bold;
     color: #646464;
@@ -13,52 +12,61 @@ body {
 .wrapper {
     width: 100%;
 }
-.header {
+.header{
     display: flex;
-    padding-left: 320px;
-    padding-right: 320px;
+    width: 100%;
+    max-width: 1920px;
     justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
     font-style: Bold;
     color: #646464;
     font-size: 21px;
-    width: 100%;
     height: 145px;
     align-items: center;
-   
+    margin: 0 auto;
 }
-
 .email_phone {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     width: 442px;
 }
-.block1 {
-    border-top: 1px solid #f2f2f2;
-     box-shadow: 0 0 10px rgba(0,0,0,0.5);
-     max-width: 1920px;
+.wrapperblock {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-   position: relative;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-size: auto;
+
 }
 .wrapperblock1 {
     width: 100%;
+    background-image: url(img/box.png);
+    background-position-x: 100%;
+    background-position-y: 0%;
+ 
+}
+.block {
+    width: 100%;
     max-width: 1920px;
     display: flex;
-    justify-content: space-between;
+    padding-right: 5%;
+}
+.block1 {
+    width: 100%;
+    max-width: 1920px;
+    display: flex;
+    border-top: 1px solid #f2f2f2;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 .text {
     padding-top: 220px;
-    padding-left: 323px;
+   /* padding-left: 323px;*/
+    padding-left: 10%;
+   margin: 0 auto;
     display: flex;
     flex-direction: column;
-    position: absolute;
     
-}
-.block1 img{
-     margin-left: 858px;
-   
+    
 }
 .stroka1 {
     font-size: 74.4px;
@@ -77,6 +85,7 @@ body {
     justify-content: space-between;
     font-size: 29.83px;
     color: #13bbcb;
+    width: 50%;
 }
 .p1 {
      border-right: 1px solid #717171;
@@ -92,19 +101,36 @@ button {
     margin-top: 135px;
     border-radius: 20px 0px 20px 0px;
 }
-.block2 {
+/*блок2*/
+.wrapperblock2 {
+    background-image: url(img/pappi.png);
+    background-position-x: 10%;
+    background-position-y: 100%;
     display: flex;
     justify-content: space-between;
-    padding-right: 335px;
-  
-    
+}
+.number {
+    display: block;
+    font-size: 60px;
+    color: #03967d;
+    width: 80px;
+    margin-left: 18%;
+    margin-top: 7%;
+}
+.numeral {
+    border: 10px solid #03967d;
+    border-radius: 50%;
+}
+.numeral_text {
+    transform: translate(0%,352%) rotate(-90deg);
+    transform-origin: 0 0;
 }
 .avia {
     width: 365px;
 }
 .punkts {
       justify-content: space-between;
-      width: 960px;
+      width: 60%;
       padding-top: 175px;
       padding-bottom: 140px;
       font-size: 24px;
@@ -114,6 +140,7 @@ button {
   display: flex;
   justify-content: space-around;
   margin-bottom: 120px;
+  margin: 0 auto;
 }
 .doc-box {
     display: flex;
@@ -134,17 +161,19 @@ h3 {
     color: #3caa90;
     margin-bottom: 40px;
 }
-.block3 {
-    width: 100%;
-    padding-right: 335px;
+/*блок3*/
+.wrapperblock3 {
+    background-image: url(img/cat.png);
+    background-position-x: 5%;
+    background-position-y: 100%;
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 .info {
-    padding-top: 170px;
-    padding-bottom: 125px;
     font-size: 24px;
-   
+  /* margin: 0 auto;*/
+   width: 60%;
 }
 .zagol {
     font-size: 24px;
@@ -162,34 +191,45 @@ h3 {
 a {
     color: #646464;
 }
-.block4 {
+.numeral_text span{
     display: flex;
+    margin-top: 160px;
+}
+.numeral_text span p{
+    margin-right: 15px;
+}
+/*блок4*/
+.wrapperblock4 {
+    background-image: url(img/rebbit.png);
+    background-position-x: 10%;
+    background-position-y: 100%;
+    display: flex;
+    justify-content: space-between;
     width: 100%;
-    padding-right: 335px;
 }
 .foto{
     margin-top: 180px;
-    margin-bottom: 238px;
+  
+
 }
 .foto1 {
     display: flex;
     
 }
 .foto7 {
-    width: 101%;
-}
-.wrapperblock5 {
-    background-repeat: no-repeat;
     width: 100%;
+}
+.wrapperblock4 .numeral_text {
+    margin-top: 364px;
+}
+/*блок5*/
+.wrapperblock5 {
+
     display: flex;
     background-image: url(img/bird.png);
-    
-    background-color: white;
     background-position-x: 0%;
     background-position-y: 100%;
-    background-size: auto;
-    
-     
+    background-size: auto;   
 }
 .block5 {
     max-width: 1920px;
@@ -199,21 +239,10 @@ a {
     position: relative;
    
 }
-.block5 .four{
-    font-size: 60px;
-    color: #03967d;
-    transform: translate(70%,40%) rotate(-90deg);
-     transform-origin: 0 0;
-}
-.four img {
-     transform: translate(117%,28%) rotate(90deg);
-     transform-origin: 0 0;
-}
 .otziv {
     margin-left: 320px;
    height: 345px; 
 }
-
 .otzivi {
      display: flex;
      margin: 0 auto;
@@ -242,10 +271,6 @@ margin-right: 25px;
 .otziv2-niz img {
 margin-right: 25px;
 }
-.bird {
-    position: absolute;
-    top: 650px;
-}
 .button-otziv {
     font-size: 27px;
     width: 265px;
@@ -254,14 +279,31 @@ margin-right: 25px;
     bottom: 120px;
     right: 425px;
 }
-.block6 {
-    display: flex;
-    padding-right: 310px;
+.text-otziv {
+    color: gray;
+    font-size: 15px;
 }
-.dannie {
+.block5 {
+    justify-content: space-between;
+}
+.block5 .numeral_text span{
+    margin-top: 30px;
+}
+/*блок6*/
+.wrapperblock6 {
+
     display: flex;
-    flex-direction: column;
+    background-image: url(img/tiger.png);
+    background-position-x: 10%;
+    background-position-y: 100%;
+    background-size: auto;   
+}
+.block6-2 {
+    max-width: 1920px;
+    margin: 0 auto;
+    width: 100%; 
     margin-top: 190px;
+    margin-bottom: 240px; 
 }
 form {
     
@@ -270,6 +312,7 @@ form {
 }
 .forma {
     display: flex;
+    justify-content: center;
 }
 .dannie h3 {
     font-family: regular;
@@ -296,9 +339,7 @@ ul {
 .dop {
     width: 960px;
 }
-.block6-2 {
-    margin-left: 75px;
-}
+
 .submit {
     font-size: 27px;
     width: 265px;
@@ -310,13 +351,13 @@ ul {
     margin-top: 102px;
  
 }
-.block7 {
-    padding-left: 213px;
-    display: flex;
-    width: 100%;
-    padding-right: 335px;
-    justify-content: space-between;
+.block6 .numeral_text span{
+    margin-top: 565px;
+}
+/*блок7*/
+.wrapperblock7 {
 
+    display: flex;
 }
 .kontakts {
     margin-top: 83px;
@@ -324,6 +365,7 @@ ul {
 }
 .sviaz {
     padding-top: 186px;
+    margin: 0 auto;
 }
 .sviaz input {
     height: 55px;
@@ -352,6 +394,7 @@ ul {
     padding-top: 230px;
     padding-bottom: 315px;
     font-size: 24px;
+    margin: 0 auto;
 }
 .dannie2 h3{
     font-family: regular;
@@ -363,160 +406,3 @@ ul {
 textarea {
     width: 315px;
 }
-
-/*adapt*/
-@media (min-width: 992px) and (max-width: 1199px){
-    body {
-        width: 100%;
-        }
-   .header {
-        padding-left: 20px;
-        padding-right: 20px;
-   }
-   .block1 img {
-        width: 50%;
-        height: 50%;
-   }
-   .text {
-        padding-left: 46px;
-        padding-top: 56px;
-   }
-   .block1 img {
-        margin-left: 488px;
-    }
-    .stroka1 {
-        font-size: 40px;
-    }
-    .stroka2 {
-        font-size: 35px;
-    }
-    .stroka3 {
-        font-size: 67px;
-    }
-    .vid {
-            font-size: 16.83px;
-    }
-    button {
-        height: 80px;
-        width: 230px;
-        font-size: 32.14px;
-        margin-top: 85px;
-    }
-  
-    .footer img{
-        width: 100%;
-    }
-    .block2 {
-        padding-right: 35px;
-        width: 100%;
-      
-    }
-    .punkts {
-           font-size: 17px;
-    }
-    .block2 >img {
-        width: 45%;
-        height: 45%;
-    }
-    h3 {
-        font-size: 20px;
-    }
-    .avia, .avto, .doc, .box {
-        width: 40%;
-    }
-    .perevozka {
-        margin-bottom: 60px;
-    }
-    .block3 {
-        padding-right: 35px;
-        width: 100%;
-      
-    }
-     .block3 >img {
-        width: 45%;
-        height: 45%;
-    }
-    .info {
-        padding-top: 70px;
-        padding-bottom: 70px;
-        font-size: 17px;
-    }
-    .ponimaem {
-        margin-top: 50px;
-    }
-    .block4 {
-        padding-right: 35px;
-        justify-content: space-between;
-       width: 100%;
-      
-    }
-    .block4 >img {
-        width: 50%;
-        height: 50%;
-       
-    }
-    .foto {
-        margin-top: 80px;
-        margin-bottom: 138px;
-
-   }
-   .foto1 {
-        flex-direction: column;
-   }
-   .foto1_1 {
-        display: none;
-   }
-   .otziv {
-    margin-left: 155px;
-   }
-   .otziv2 {
-       display: none;
-   }
-   .button-otziv {
-       right: 45px;
-   }
-   .block6 >img {
-        width: 50%;
-        height: 50%; 
-    }
-    .forma {
-        flex-direction: column;
-    }
-    .dop {
-    width: 400px;
-}
-.form1 {
-    margin-bottom: 50px;
-}
-.block7 {
-    padding-left: 0px;
-    padding-right: 10px;
-    width: 100%;
-}
-.footer {
-    width: 100%;
-}
-.phones {
-    margin-left: 30px;
-}
-.block5 {
-    width: 100%;
-}
-.block6 {
-    width: 100%;
-}
-}
-@media (min-width: 768px)and (max-width:991px){
-
-}
-@media (max-width: 767px) and (min-width: 480px){
-
-}
-@media (max-width: 479px){
-
-}
-
-
-
-
-
